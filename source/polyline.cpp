@@ -7,7 +7,7 @@ void putpixel(double x, double y);
 void DDA(double x1, double y1, double x2, double y2);
 void DesenhaPlano(void);
 void Desenha(void);
-void polilinha(void);
+void polyline(void);
 
 // Função pintar o pixel!!
 void putpixel(double x, double y){
@@ -31,7 +31,7 @@ void DDA(double x1, double y1, double x2, double y2){
 		putpixel(x, y);
 	};
 };
-void polilinha(){
+void polyline(){
 	glColor3f(1.0f, 0.0f, 0.0f);	// Cor ponto
 	glBegin(GL_LINE_STRIP);
 	//glVertex2f(10, 10);
@@ -75,6 +75,6 @@ int main(void){
 	glutDisplayFunc(Desenha);					// Chama a função principal
 	glutMainLoop();
 
-	polilinha();
+	polyline();
 	//return 0;
 };
