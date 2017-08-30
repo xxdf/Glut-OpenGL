@@ -11,6 +11,9 @@
 *.gch
 *.pch
 
+# Distribution / packaging
+dist/
+
 # Compiled Dynamic libraries
 *.so
 *.dylib
